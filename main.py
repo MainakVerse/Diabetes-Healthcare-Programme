@@ -22,6 +22,7 @@ Tabs = {
 st.sidebar.title('Navigation')
 
 page = st.sidebar.radio("Page", list(Tabs.keys()))
+st.sidebar.info('Made with 💙 by Mainak')
 
 df, X, y = load_data()
 
