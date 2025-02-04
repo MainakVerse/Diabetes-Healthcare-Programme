@@ -6,3 +6,4 @@ seaborn
 scikit-learn
 fpdf
 google-generativeai
+python-dotenv
