@@ -11,10 +11,12 @@ import google.generativeai as genai
 
 load_dotenv()
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+# Load API Key from Streamlit secrets
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 if not GEMINI_API_KEY:
-    raise ValueError("Gemini API key is missing! Add it to the .env file.")
+    raise ValueError("Gemini API key is missing! Add it to Streamlit secrets.")
+
 genai.configure(api_key=GEMINI_API_KEY)
 
 def app(df, X, y):
