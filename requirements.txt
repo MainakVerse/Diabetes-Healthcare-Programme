@@ -1,0 +1,9 @@
+streamlit
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+fpdf
+google
+dotenv
