@@ -16,7 +16,7 @@ Tabs = {
     "Ask Queries":talk2doc,
     "Diagnosis":diagnosis,
     "Result":result,
-    # "Knowledge Center":kc
+    "Knowledge Center":kc
 }
 
 st.sidebar.title('Navigation')
