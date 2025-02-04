@@ -6,4 +6,4 @@ seaborn
 scikit-learn
 fpdf
 google
-dotenv
+python-dotenv
