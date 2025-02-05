@@ -428,15 +428,4 @@ def app(df, X, y):
 
         # Add the link to the dataset
         st.link_button("View Data Set", "https://www.kaggle.com/uciml/pima-indians-diabetes-database")
-        st.markdown(
-            """
-                <p style="font-size:24px">
-                    <a 
-                        href="https://www.kaggle.com/uciml/pima-indians-diabetes-database"
-                        target=_blank
-                        style="text-decoration:none;"
-                    >Get Dataset
-                    </a> 
-                </p>
-            """, unsafe_allow_html=True
-        )
+        
