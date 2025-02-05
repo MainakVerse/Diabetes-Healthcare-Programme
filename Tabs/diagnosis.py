@@ -25,7 +25,7 @@ def app(df, X, y):
     <style>
     .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
         font-size: 24px;
-        color: #00ffcc; /* Neon cyan text color */
+        color: #0000cc; /* Neon cyan text color */
         
     }
 </style>
