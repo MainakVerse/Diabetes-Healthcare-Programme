@@ -103,7 +103,7 @@ def app(df, X, y):
         st.table(slider_df)
 
         # Download section
-        st.subheader("Download Options")
+        st.subheader("Download Test Report")
         user_name = st.text_input("Enter your name (required for download):")
 
         if user_name:
