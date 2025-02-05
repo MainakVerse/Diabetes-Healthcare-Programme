@@ -37,13 +37,7 @@ def app(df, X, y):
     # First Tab: Prediction Page
     with tab1:
         st.title("Diagnosis Page")
-        st.markdown(
-            """
-                <p style="font-size:25px">
-                    This app uses <b style="color:green">Random Forest Classifier</b> for the Early Prediction of Diabetes.
-                </p>
-            """, unsafe_allow_html=True
-        )
+        
 
         # Take input of features from the user
         st.subheader("Select Values:")
