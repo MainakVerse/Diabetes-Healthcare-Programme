@@ -37,7 +37,7 @@ def app(df, X, y):
     # First Tab: Prediction Page
     with tab1:
         st.title("Diagnosis Page")
-        
+        st.write("The aim is to detect the different types of diabetes and the risk of onset from the clinical test data. This makes the detection process extremely fast and feature-rich augmenting treatment experience and ease of access for both patient and physician")
 
         # Take input of features from the user
         st.subheader("Select Values:")
