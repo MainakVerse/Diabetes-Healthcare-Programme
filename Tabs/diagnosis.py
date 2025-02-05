@@ -427,6 +427,7 @@ def app(df, X, y):
                 st.dataframe(df[col])
 
         # Add the link to the dataset
+        st.link_button("View Data Set", "https://www.kaggle.com/uciml/pima-indians-diabetes-database")
         st.markdown(
             """
                 <p style="font-size:24px">
