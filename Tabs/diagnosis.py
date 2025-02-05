@@ -413,7 +413,7 @@ def app(df, X, y):
         # Show datatype of all columns
         with summary:
             if st.checkbox("View Summary"):
-            st.dataframe(df.describe())
+                st.dataframe(df.describe())
 
         # Show data for each column
         with col_data:
