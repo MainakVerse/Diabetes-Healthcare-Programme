@@ -402,12 +402,8 @@ def app(df, X, y):
         # Create a section for columns description
         st.subheader("Columns Description:")
 
-        # Create a checkbox to get the summary
-        if st.checkbox("View Summary"):
-            st.dataframe(df.describe())
-
-        # Create multiple checkboxes in a row
-        col_name, col_dtype, col_data = st.columns(3)
+             # Create multiple checkboxes in a row
+        col_name, summary, col_data = st.columns(3)
 
         # Show name of all columns
         with col_name:
@@ -415,10 +411,9 @@ def app(df, X, y):
                 st.dataframe(df.columns)
 
         # Show datatype of all columns
-        with col_dtype:
-            if st.checkbox("Columns data types"):
-                dtypes = df.dtypes.apply(lambda x: x.name)
-                st.dataframe(dtypes)
+        with summary:
+            if st.checkbox("View Summary"):
+            st.dataframe(df.describe())
 
         # Show data for each column
         with col_data:
