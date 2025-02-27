@@ -271,7 +271,7 @@ def app(df, X, y):
                 - Any additional lifestyle suggestions
                 """
                 
-                model = genai.GenerativeModel("gemini-pro")  # Using Gemini Pro for text-based generation
+                model = genai.GenerativeModel("gemini-1.5-pro-latest")  # Using Gemini Pro for text-based generation
                 response = model.generate_content(prompt)
                 
                 return response.text
