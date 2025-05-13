@@ -23,7 +23,7 @@ def ask_gemini(query):
     Provide a clear, concise, and accurate medical response.
     """
 
-    model = genai.GenerativeModel("gemini-1.5-pro-latest")
+    model = genai.GenerativeModel("gemini-2.0-flash")
     response = model.generate_content(prompt)
     
     return response.text
